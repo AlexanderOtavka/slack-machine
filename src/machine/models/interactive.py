@@ -391,7 +391,7 @@ class BlockActionsPayload(TypedModel):
     container: Container
     trigger_id: str
     team: Team
-    enterprise: str | None
+    enterprise: dict | str | None
     is_enterprise_install: bool
     channel: Channel | None = None
     message: Message | None = None
